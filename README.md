@@ -90,6 +90,7 @@ After ACCUM, the core computes the highest set bit position from LZC:
 msb_pos = (WORK_WIDTH-1) - lzc(block_max)
 
 and chooses:
+
 TARGET_MAG_MSB = (MANT_WIDTH - 2 - GUARD_BITS)
 shift_amt = max(0, msb_pos - TARGET_MAG_MSB)
 
